@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--task1 meta tags and title--> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A secure and effective student registration form for managing student details name,rollno class email phoneno">
+    <meta name="name" content="Priya Kumari">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="backgroundimg">
+    
+    <header>
+        <h1>Student Registration System</h1>
+        <img src="priyaimg.jfif">
+        
+        <h2>I made a student registeration form here students can register their details such
+            as name,class,rollno,id etc.Additionally i provide functionalities for editing and delitings.
+        </h2>
+        
+    </header>
+    
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+
+              <section>
+                     <label for="studentName">Student Name:</label><label class="validation-error hide" id="studentNameValidationError">This field is required.</label>
+                     <input type="text" name="studentName" id="studentName">
+                     <br>
+
+              </section>
+              <section>
+                <label for="studentId">Student Id:</label>
+                <input type="number" name="studentId" id="studentId">
+                
+
+         </section>
+         <section>
+            <label for="Class">Class</label>
+            <input type="text" name="Class" id="Class">
+            
+
+     </section>
+     <section>
+        <label for="rollno">Roll No</label>
+        <input type="number" name="rollno" id="rollno">
+        
+
+ </section>
+ <section>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email">
+    
+
+</section>
+
+<section>
+    <label for="phoneno">Phone No</label>
+    <input type="number" name="phoneno" id="phoneno">
+    
+
+</section>
+
+
+ <section class="form-action-buttons">
+    
+    <input type="submit" value="Add">
+    
+
+</section>
+
+
+                </form>
+            </td>
+            <td>
+                <table class="list" id="studentList">
+              <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student Id</th>
+                    <th>Class</th>
+                    <th>Roll No</th>
+                    <th>Email</th>
+                    <th>Phone No</th>
+                    <th></th>
+                </tr>
+              </thead>
+              <tbody>
+
+
+
+              </tbody>
+                </table>
+            </td>
+
+        </tr>
+    </table>
+    <script src="script.js"></script>
+    </section>
+    
+</body>
+</html>

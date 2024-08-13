@@ -1,0 +1,223 @@
+body{
+
+    width:100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /* background-color: rgb(208, 255, 0); */
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 90px;
+    border:20px solid black;
+}
+.backgroundimg{
+    background-image: url('prr.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+body:hover{
+    background-color: rgb(20, 26, 30);
+    color: rgb(30, 30, 210);
+
+}
+header h1{
+    color:cyan;
+
+}
+header h2{
+    color:cyan;
+}
+header h2:hover{
+    color: rgb(18, 226, 18);
+}
+table{
+    width: 100%;
+    text-align: left;
+    margin: 0px;
+    padding: 0px ;
+
+    
+}
+header h1:hover{
+    color:rgb(0, 255, 68);
+}
+
+table{
+    border-collapse:collapse;
+
+
+
+}
+
+table.list{
+    width:100%;
+}
+table.list:hover{
+    transition:red 5sec 2sec 4sec;
+
+}
+
+td,th{
+    border:1px solid rgb(191, 20, 163);
+    text-align: left;
+    padding: 10px;
+}
+td,th:hover{
+    border: 2px solid rgb(0, 0, 0);
+    color:black;
+
+}
+tr:nth-child(even),table.list thead>tr{
+    background-color: rgb(17, 215, 57);
+}
+tr:nth-child(odd),table.list thead>tr{
+    background-color: rgb(0, 157, 255);
+}
+tr:nth-child(even):hover,table.list thead>tr:hover{
+    background-color: rgb(128, 16, 121);
+}
+tr:nth-child(odd):hover,table.list thead>tr:hover{
+    background-color: rgb(255, 0, 242);
+}
+input[type=number],input[type=text],input[type=email]{
+
+    width:100%;
+    padding: 12px 20px;
+    margin:8px 0;
+    display:inline-block;
+    border:1px solid rgb(12, 78, 159);
+    border-radius:4px;
+    box-sizing:border-box;
+
+}
+input[type=number]:hover,input[type=text]:hover,input[type=email]:hover{
+
+    width:100%;
+    padding: 12px 20px;
+    margin:8px 0;
+    display:inline-block;
+    border: 4px solid rgb(12, 78, 159);
+    border-radius:40px;
+    box-sizing:border-box;
+    background-color:rgb(33, 13, 211); 
+    color: blue;
+    
+
+
+}
+
+/* tr:nth-child(odd),input[type=text]{
+
+    width:100%;
+    padding: 12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border:1px solid rgb(6, 184, 77);
+    border-radius:4px;
+    box-sizing:border-box;
+
+} */
+
+
+input[type=submit]{
+
+ width: 30%;
+ background-color: rgb(227, 20, 20);
+ color:  black;
+ padding:14px 20px;
+ margin:8px 0;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+
+
+
+}
+input[type=submit]:hover{
+    background-color: blue;
+
+}
+form section.form-action-buttons{
+    text-align: right;
+}
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(13, 151, 142);
+    margin-right: 4px;
+}
+label.validation-error{
+    color: rgb(42, 3, 65);
+    margin-left: 5px;
+}
+.hide{
+    display: none;
+}
+
+@media screen and(max-width:900px) {
+    table{
+        font-size: .9em;
+    }
+
+header h1{
+    font: 1.5em;
+}
+header h2{
+    font-size: 1em;
+}
+input[type="text"],input[type="number"],input[type="email"]{
+ font-size: 1em;
+}
+input[type="submit"]{
+    font-size: 1em;
+    padding: 8px 15px;
+}
+
+}
+/* for phone */
+@media screen and(max-width:600px){
+    header h1{
+        font-size=1.2em;
+
+    }
+    header h2{
+        font-size:0.9em;
+    }
+    table.list{
+        display:block;
+    
+        width:100%;
+        overflow-x:auto;
+    }
+    table.list thead,table.list tbody,table.list td, table.list tr{
+        display:block;
+        
+    }
+    table.list th,table.list td{
+        width:100%;
+    }
+    td{
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before{
+        content:after(data-label);
+        position:absolute;
+        left:10px;
+        width:45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+    }
+    input[type="text"],input[type="number"],input[type="email"]{
+        font-size:0.9em;
+    }
+    input[type="submit"]{
+        font-size: 0.9em;
+        padding: 6px 10px;
+    }
+}
